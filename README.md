@@ -61,7 +61,7 @@ Associate my own extension to a future path to an executable (both chosen by me)
 
 In this case 
 - `.Pyexec` is my extension
-- `PythonScriptExecutable` this will be used to set a `python.exe` in step 2
+- `PythonScriptExecutable` will be used to set a `python.exe` in step 2
 
 
 ### Step 2: 
@@ -70,7 +70,7 @@ In this case
 >```
 
 Two things: 
-1. be ware to not forget ` %1 %*`
+1. be ware to not forget ` %1 %*` at the end of the path.
 2. Where is my python.exe? Well, with the `sys` library (you should have it installed by default) 
 >```python
 >   import sys
@@ -78,10 +78,10 @@ Two things:
 >    sys.prefix    
 >```
 
-In my case, it returns `"C:/ProgramData/Anaconda3/python.exe"` and just need to change the `//` for `\`:  `C:\ProgramData\Anaconda3\python.exe` and copy this to the CMD
+In my case, it returns `"C:/ProgramData/Anaconda3/python.exe"` and I just need to change the `//` for `\` (because I am on windows):  `C:\ProgramData\Anaconda3\python.exe` and copy this to the CMD.
 
 <center>
-    <h6><b>REMARK</b> <i>if you are using another virtual enviroment (venv), it will print the python.exe inside your venv.</i></h6>
+    <h6><b>REMARK</b> <i>if you are using another virtual enviroment (venv), it will print the python.exe's path inside your venv.</i></h6>
 </center>
     
 ### Step 3
