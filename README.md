@@ -1,7 +1,7 @@
 # Making-my-own-executable-python
 Define your own .ExecutableExtension to run python code (and others) with just one click
-
-# Run you python code in just one click
+___
+# Run your python code in just one click
 Sometimes you have scripts that you just need to reuse over and over again, so, it would be great if we just press a button and wait for the results, right?
 
 ## 1. The solution
